@@ -1,38 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Doyle Clothing](./assets/doyle-clothing-cover.png)](https://doyle-clothing-next.vercel.app/)
 
-## Getting Started
+# Doyle Clothing
 
-First, run the development server:
+An online retail store built with Next JS with design and product inspiration from [H&M](https://www2.hm.com/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Note: This application is also built using React JS and Node JS (express js). [View Source Code](https://github.com/ainedoyle20/doyle-clothing)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Users can:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- create an account / log in
+- search for clothing items with the help of clothing categories and colour filters
+- add clothing items to their shopping basket
+- checkout using Stripe
+- view order history
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Tech used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Next JS
+- TypeScript
+- Firebase (authentication)
+- Sanity (content management)
+- Zustand (state management)
+- Stripe JS
+- Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### View Live
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[View Doyle Clothing live](https://doyle-clothing-next.vercel.app/)
