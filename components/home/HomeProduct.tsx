@@ -27,7 +27,7 @@ const HomeProduct = ({ product }: HomeProductProps) => {
     >
       <Image 
         alt="product image" 
-        src={product.image[0].asset.url} 
+        src={product?.image[0]?.asset?.url ? product.image[0].asset.url : ""} 
         width={100}
         height={100}
         className="w-full h-4/5 cursor-pointer" 

@@ -20,13 +20,17 @@ const Products = ({ category, subCategory, searchTerm, setSearchTerm, selectedCo
   const [mens, setMens] = useState(true);
   const [data, setData] = useState<TProduct[]>([]);
   const [products, setProducts] = useState<TProduct[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getProducts = async (gender: string): Promise<void> => {
+      setLoading(true);
       const res = await fetchProducts(gender);
       if (res) {
         setData(res);
       }
+
+      setLoading(false);
     }
 
     if (mens) {
@@ -115,7 +119,7 @@ const Products = ({ category, subCategory, searchTerm, setSearchTerm, selectedCo
         <Colours selectedColour={selectedColour} setSelectedColour={setSelectedColour} />
       </div>
 
-      {products.length ? (
+      {products.length && !loading ? (
         <div className='w-full flex flex-wrap gap-2 justify-center px-2'>
           {products.map(product => (
             <HomeProduct 
